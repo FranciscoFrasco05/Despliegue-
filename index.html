@@ -3,40 +3,138 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hola Mundo</title>
-    <h1>Esta es la pagina de Francisco José Sánchez Lloret</h1>
+    <title>Francisco José Sánchez Lloret</title>
 
     <!-- Materialize CSS -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+        .main-header {
+            background: #263238;
+            color: #fff;
+            padding: 20px 0;
+        }
+        .main-header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        .card-content p {
+            font-size: 1rem;
+        }
+        footer {
+            background-color: #263238;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-    <div class="container">
-        <h1 class="center-align">¡Hola Mundo!</h1>
-        <p class="flow-text">Este es un ejemplo de diseño con Materialize CSS.</p>
-        <a href="signup.html" class="waves-effect waves-light btn">Registrarse</a>
+
+    <!-- Header con barra de navegación -->
+    <header class="main-header">
+        <div class="container">
+            <nav>
+                <div class="nav-wrapper">
+                    <a href="#" class="brand-logo">Francisco Sánchez</a>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                        <li><a href="#about">Sobre mí</a></li>
+                        <li><a href="#projects">Proyectos</a></li>
+                        <li><a href="#contact">Contacto</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <h1 class="center-align">Bienvenido a mi página personal</h1>
+        </div>
+    </header>
+
+    <!-- Sección Sobre mí -->
+    <div id="about" class="section scrollspy">
+        <div class="container">
+            <h2 class="center-align">Sobre mí</h2>
+            <p class="flow-text center-align">Soy Francisco José Sánchez Lloret, un apasionado desarrollador web con experiencia en crear soluciones dinámicas y eficientes para la web. Me encanta aprender nuevas tecnologías y compartir mis conocimientos con la comunidad.</p>
+        </div>
     </div>
-    <div class="row">
-    <div class="col s12 m6 l4">
-        <div class="card">
-            <div class="card-image">
-                <img src="https://via.placeholder.com/150">
-                <span class="card-title">Card Title</span>
-            </div>
-            <div class="card-content">
-                <p>Este es un ejemplo de tarjeta usando Materialize.</p>
-            </div>
-            <div class="card-action">
-                <a href="#">Leer más</a>
+
+    <!-- Sección de Proyectos -->
+    <div id="projects" class="section scrollspy">
+        <div class="container">
+            <h2 class="center-align">Proyectos</h2>
+            <div class="row">
+                <div class="col s12 m6 l4">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="https://via.placeholder.com/150">
+                            <span class="card-title">Proyecto 1</span>
+                        </div>
+                        <div class="card-content">
+                            <p>Un proyecto innovador que utiliza tecnología de punta para mejorar la experiencia del usuario.</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="#">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m6 l4">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="https://via.placeholder.com/150">
+                            <span class="card-title">Proyecto 2</span>
+                        </div>
+                        <div class="card-content">
+                            <p>Un sistema web que ayuda a automatizar procesos en pequeñas y medianas empresas.</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="#">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m6 l4">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="https://via.placeholder.com/150">
+                            <span class="card-title">Proyecto 3</span>
+                        </div>
+                        <div class="card-content">
+                            <p>Aplicación móvil para mejorar la gestión de recursos y tareas en proyectos colaborativos.</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="#">Ver más</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-</div>
 
+    <!-- Sección de Contacto -->
+    <div id="contact" class="section scrollspy">
+        <div class="container">
+            <h2 class="center-align">Contacto</h2>
+            <p class="center-align">Si deseas contactar conmigo para discutir un proyecto, colaboración o cualquier otra consulta, no dudes en enviarme un mensaje.</p>
+            <a href="mailto:francisco@example.com" class="waves-effect waves-light btn-large">Enviar mensaje</a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Francisco José Sánchez Lloret. Todos los derechos reservados.</p>
+    </footer>
 
     <!-- Materialize JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <!-- Inicialización de Materialize -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.scrollspy');
+            var instances = M.ScrollSpy.init(elems, {scrollOffset: 50});
+        });
+    </script>
+
 </body>
 </html>
-
