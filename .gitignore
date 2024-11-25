@@ -1,0 +1,36 @@
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+
+# Dependencias de Node.js
+node_modules/
+package-lock.json
+yarn.lock
+
+# Archivos de configuración del entorno
+.env
+.env.local
+.env.*.local
+
+# Archivos de compilación y distribución
+dist/
+build/
+out/
+
+# Archivos de logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Archivos de IDEs
+.idea/
+.vscode/
+*.swp
+
+# Archivos de sistemas de control
+*.log
+*.bak
+*.tmp
+
+# Archivos de configuración de MacOS/Linux
+*.~lock.*
